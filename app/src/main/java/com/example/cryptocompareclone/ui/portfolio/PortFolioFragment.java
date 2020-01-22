@@ -3,6 +3,7 @@ package com.example.cryptocompareclone.ui.portfolio;
 import android.content.Intent;
 import android.graphics.Rect;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -58,9 +59,6 @@ public class PortFolioFragment extends Fragment {
                         fragment_edit_portfolio, viewGroup, false);
                 dialogView.setMinimumWidth((int)(displayRectangle.width() * 1f));
                 dialogView.setMinimumHeight((int)(displayRectangle.height() * 1f));
-
-             //   dialogView.setMinimumWidth(300);
-             //   dialogView.setMinimumHeight(100);
 
 
                 builder.setView(dialogView);
