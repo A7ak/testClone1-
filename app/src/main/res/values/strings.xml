@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">Crypto Compare Clone</string>
+    <string name="title_watchlist">Watchlist</string>
+    <string name="title_portfolio">Portfolio</string>
+    <string name="title_news">News</string>
+    <string name="terms_amp_conditions"><u>Terms Conditions</u></string>
+    <string name="policy"><u>Policy</u></string>
+    <string name="log_out">Log out</string>
+
+    <string-array name="currency_list">
+        <item>US Dollar</item>
+        <item>Euro</item>
+        <item>British Pound</item>
+        <item>Bitcoin</item>
+        <item>Ether</item>
+        <item>Gold</item>
+        <item>Australian Dollar</item>
+        <item>Brazilian Real</item>
+        <item>Canadian Dollar</item>
+        <item>Chinese Yuan</item>
+        <item>Hong Kong Dollar</item>
+        <item>Indian Rupee</item>
+        <item>Japanese Yen</item>
+        <item>South Korean Won</item>
+        <item>Mexico Peso</item>
+        <item>New Zealand Dollar</item>
+        <item>Philippines Peso</item>
+        <item>Polish Zloty</item>
+        <item>Romanian New Leu</item>
+        <item>Russian Ruble</item>
+        <item>Singapore Dollar</item>
+        <item>Venezuelan Bolivar</item>
+    </string-array>
+
+    <string-array name="currency_abbreviation">
+        <item>USD</item>
+        <item>EUR</item>
+        <item>GBP</item>
+        <item>BTC</item>
+        <item>ETH</item>
+        <item>GOLD</item>
+        <item>AUD</item>
+        <item>BRL</item>
+        <item>CAD</item>
+        <item>CNY</item>
+        <item>HKD</item>
+        <item>INR</item>
+        <item>JPY</item>
+        <item>KRW</item>
+        <item>MXN</item>
+        <item>NZD</item>
+        <item>PHP</item>
+        <item>PLN</item>
+        <item>RON</item>
+        <item>RUB</item>
+        <item>SGD</item>
+        <item>VEF</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

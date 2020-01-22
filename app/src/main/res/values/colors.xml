@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="statusBarColor">#00FFFFFF</color>
+    <color name="graph_border_color">#177F33</color>
+    <color name="graph_max_limit">#B9D8C1</color>
+    <color name="green">#49D87c</color>
+    <color name="following_onclick_green_color">#49D87C</color>
+    <color name="default_white_color">#FFFFFF</color>
+    <color name="default_black_color">#050505</color>
+    <color name="grey">#C0BEBE</color>
+
+</resources>
