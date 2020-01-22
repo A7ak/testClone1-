@@ -36,7 +36,7 @@
                 android:layout_weight="2" />
 
             <TextView
-                android:id="@+id/currency"
+                android:id="@+id/currency_menu_option"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"

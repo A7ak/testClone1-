@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.lifecycle.Observer;
@@ -15,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.cryptocompareclone.R;
 import com.example.cryptocompareclone.di.application.ViewModelProviderFactory;
 import com.example.cryptocompareclone.models.news.LatestNewsArticleResponsePage;
+import com.example.cryptocompareclone.ui.SettingsActivity;
 
 import javax.inject.Inject;
 
@@ -51,6 +53,14 @@ public class NewsFragment extends DaggerFragment implements NewsAdapter.NewsInte
         });
 
 
+        ImageView user = rootView.findViewById(R.id.user);
+        user.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), SettingsActivity.class);
+                startActivity(intent);
+            }
+        });
         return rootView;
     }
 
