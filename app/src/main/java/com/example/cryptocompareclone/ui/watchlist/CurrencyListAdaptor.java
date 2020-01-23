@@ -3,6 +3,7 @@ package com.example.cryptocompareclone.ui.watchlist;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -46,11 +47,12 @@ public class CurrencyListAdaptor extends RecyclerView.Adapter<CurrencyListAdapto
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView currencyName;
         TextView currencyAbbreviation;
-
+        ImageView selected;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             currencyName = itemView.findViewById(R.id.currency_name);
             currencyAbbreviation = itemView.findViewById(R.id.currency_abbreviation);
+            selected = itemView.findViewById(R.id.selected);
         }
     }
 }

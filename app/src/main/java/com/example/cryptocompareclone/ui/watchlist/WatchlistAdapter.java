@@ -47,7 +47,7 @@ public class WatchlistAdapter extends RecyclerView.Adapter<WatchlistAdapter.Coin
         holder.tvCoinSerialNo.setText("" + (position + 1));
         holder.mCoinFullName.setText("" + mDatum.get(position).getCoinInfo().getFullName());
         holder.mCoinShortName.setText("" + mDatum.get(position).getCoinInfo().getName());
-        String getTotalVolume = "" + Math.round(mDatum.get(position).getRAW().getUSD()
+  /*      String getTotalVolume = "" + Math.round(mDatum.get(position).getRAW().getUSD()
                 .getTOTALVOLUME24HTO() / 10000F);
         getTotalVolume = getTotalVolume.substring(0, getTotalVolume.length() - 2) + "." +
                 getTotalVolume.substring(getTotalVolume.length() - 2, getTotalVolume.length());
@@ -55,6 +55,24 @@ public class WatchlistAdapter extends RecyclerView.Adapter<WatchlistAdapter.Coin
                 + " " + getTotalVolume + " M");
 
         String getCurrentPrice = "" + mDatum.get(position).getRAW().getUSD().getPRICE();
+*/
+        String getTotalVolume = "" + Math.round(mDatum.get(position).getRAW().getUSD().getTOTALVOLUME24HTO() / 10000F);
+        getTotalVolume = getTotalVolume.substring(0, getTotalVolume.length() - 2) + "." + getTotalVolume.substring(getTotalVolume.length() - 2, getTotalVolume.length());
+        holder.mCoinVolume.setText(mDatum.get(position).getDISPLAY().getUSD().getTOSYMBOL() + " " + getTotalVolume + " M");
+
+        String currentPrice = ""+mDatum.get(position).getRAW().getUSD().getPRICE();
+        if(mDatum.get(position).getRAW().getUSD().getPRICE()>=1 && currentPrice.indexOf(".")<currentPrice.length()-2){
+            currentPrice = currentPrice.substring(0,currentPrice.indexOf(".")+3);
+
+        }else {
+            if(mDatum.get(position).getRAW().getUSD().getPRICE()<0.1 && currentPrice.length()>7){
+                currentPrice = currentPrice.substring(0,7);
+            }else if(mDatum.get(position).getRAW().getUSD().getPRICE()>0.1 && currentPrice.length()>6) {
+                currentPrice = currentPrice.substring(0,6);
+            }
+        }
+        holder.mCoinCurrentPrice.setText(mDatum.get(position).getDISPLAY().getUSD().getTOSYMBOL()+" "+currentPrice);
+
 
         holder.mParentLayout.setOnClickListener(new View.OnClickListener() {
             @Override

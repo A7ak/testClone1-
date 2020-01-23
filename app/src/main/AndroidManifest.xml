@@ -22,6 +22,7 @@
         </activity>
         <activity android:name=".ui.watchlist.WatchlistDetailActivity"/>
         <activity android:name=".ui.SettingsActivity"/>
+        <activity android:name=".ui.news.NewSources"/>
     </application>
 
 </manifest>

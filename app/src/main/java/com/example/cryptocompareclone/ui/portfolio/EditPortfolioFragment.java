@@ -20,7 +20,6 @@ public class EditPortfolioFragment extends Fragment {
 
 
     public EditPortfolioFragment() {
-        // Required empty public constructor
     }
 
 
@@ -29,12 +28,12 @@ public class EditPortfolioFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_edit_portfolio, container, false);
-        String[] currencyArray ={String.valueOf(R.array.currency_abbreviation)};
+        String[] currencyArray = {String.valueOf(R.array.currency_abbreviation)};
 
         RecyclerView currencyRecyclerView = rootView.findViewById(R.id.currency_unit_recycler_view);
         CurrencyAdapter currencyAdapter = new CurrencyAdapter(currencyArray);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(currencyRecyclerView
-                .getContext(), RecyclerView.HORIZONTAL,false);
+                .getContext(), RecyclerView.HORIZONTAL, false);
         currencyRecyclerView.setAdapter(currencyAdapter);
         currencyRecyclerView.setLayoutManager(linearLayoutManager);
 
@@ -46,7 +45,7 @@ public class EditPortfolioFragment extends Fragment {
                 LinearLayoutManager.VERTICAL, false);
         recyclerView.setLayoutManager(manager);
   */
-    return rootView;
+        return rootView;
     }
 
 }

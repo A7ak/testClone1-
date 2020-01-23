@@ -79,6 +79,8 @@ dependencies {
 }
 
 dependencies {
+
+    implementation 'com.android.support:customtabs:25.2.0'
     implementation 'androidx.appcompat:appcompat:+'
     implementation 'androidx.constraintlayout:constraintlayout:+'
 }

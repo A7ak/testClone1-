@@ -37,11 +37,9 @@ public class PortFolioFragment extends Fragment {
         dashboardViewModel =
                 ViewModelProviders.of(this).get(DashboardViewModel.class);
         final View root = inflater.inflate(R.layout.fragment_portfolio, container, false);
-       // final TextView textView = root.findViewById(R.id.text_dashboard);
         dashboardViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
-              //  textView.setText(s);
             }
         });
 
@@ -53,17 +51,17 @@ public class PortFolioFragment extends Fragment {
                 Window window = getActivity().getWindow();
                 window.getDecorView().getWindowVisibleDisplayFrame(displayRectangle);
                 final AlertDialog.Builder builder = new AlertDialog.Builder(
-                        getContext(),R.style.CustomAlertDialog);
+                        getContext(), R.style.CustomAlertDialog);
                 ViewGroup viewGroup = root.findViewById(android.R.id.content);
                 View dialogView = LayoutInflater.from(v.getContext()).inflate(R.layout.
                         fragment_edit_portfolio, viewGroup, false);
-                dialogView.setMinimumWidth((int)(displayRectangle.width() * 1f));
-                dialogView.setMinimumHeight((int)(displayRectangle.height() * 1f));
+                dialogView.setMinimumWidth((int) (displayRectangle.width() * 1f));
+                dialogView.setMinimumHeight((int) (displayRectangle.height() * 1f));
 
 
                 builder.setView(dialogView);
                 final AlertDialog alertDialog = builder.create();
-                ImageView buttonOk=dialogView.findViewById(R.id.cancel);
+                ImageView buttonOk = dialogView.findViewById(R.id.cancel);
                 buttonOk.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
@@ -77,9 +75,6 @@ public class PortFolioFragment extends Fragment {
 
             }
         });
-
-
-
 
 
         ImageView user = root.findViewById(R.id.user);
